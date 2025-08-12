@@ -51,7 +51,7 @@ Try the live demo to see the system in action with real queries and responses.
 
 ---
 
-*This project demonstrates advanced RAG (Retrieval Augmented Generation) implementation for financial domain e
+
 ## 🚀 **Live Demonstration**
 
 **[→ Try Interactive Demo](https://buffett-navigator-showcase.streamlit.app)**
