@@ -52,12 +52,6 @@ Try the live demo to see the system in action with real queries and responses.
 ---
 
 
-## 🚀 **Live Demonstration**
 
-**[→ Try Interactive Demo](https://buffett-navigator-showcase.streamlit.app)**
-
-*Experience the interface and AI capabilities with curated examples*
-
-## 💡 **Sample Capabilities**
 
 # buffett-gpt-chatbot
