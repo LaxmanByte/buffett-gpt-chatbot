@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio | Warren Buffett RAG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            color: #1a202c;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, #4c51bf, #667eea);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="py-6 bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Laxman</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a></li>
+                    <li><a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">AI Developer & Data Scientist</h2>
+            <p class="text-xl md:text-2xl mb-8">Building intelligent systems that extract knowledge and drive insights.</p>
+            <a href="#projects" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h3>
+            <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6">
+                    Hello! I'm a passionate AI developer specializing in building intelligent applications that leverage the power of large language models. My focus is on creating practical, verifiable solutions, particularly in the area of Retrieval-Augmented Generation (RAG). I love turning complex data into accessible and insightful tools.
+                </p>
+                <p>
+                    I am skilled in Python, Streamlit, and various machine learning frameworks. I'm actively seeking freelance opportunities to apply my skills and help businesses unlock the value hidden in their documents and data.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Featured Project</h3>
+            
+            <!-- Project Card -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h4 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Warren Buffett Knowledge Assistant</h4>
+                        <p class="text-gray-600 mb-6">
+                            This project is a powerful Retrieval-Augmented Generation (RAG) system built with Streamlit and powered by the Gemini AI model. It allows users to ask complex questions and receive accurate, verifiable answers based on a knowledge base of Berkshire Hathaway annual reports (2008-2025).
+                        </p>
+                        <p class="text-gray-600 font-semibold mb-4">Key Features:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Accurate, context-aware answers from provided documents.</li>
+                            <li>Source citations to eliminate "hallucination."</li>
+                            <li>Intuitive and clean user interface built with Streamlit.</li>
+                            <li>Scalable architecture for various document types.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-4 flex flex-col justify-center items-center">
+                        <!-- Project Image: For best results, use an image around 1200x900px. -->
+                        <img src="https://raw.githubusercontent.com/LaxmanByte/buffett-gpt-chatbot/main/BUffettGPT_1.png" alt="Warren Buffett Knowledge Assistant Project Screenshot" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demonstration: Questions & Answers -->
+            <div class="bg-gray-100 rounded-2xl shadow-xl p-8 mb-12">
+                <h4 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-6">Demonstration: Questions & Answers</h4>
+                <p class="text-gray-600 text-center mb-8">A look at the RAG system's ability to answer nuanced, domain-specific questions.</p>
+
+                <!-- Q&A Card 1 -->
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                    <div class="md:w-1/2">
+                        <h5 class="font-bold text-indigo-600 mb-2">Question:</h5>
+                        <p class="text-gray-700 italic">"What does Warren Buffett's correspondence in the annual reports say about the role of insurance float in Berkshire's long-term success?"</p>
+                        <h5 class="font-bold text-indigo-600 mt-4 mb-2">Answer:</h5>
+                        <p class="text-gray-700">
+                            Based on the annual reports from 2004 to 2024, Warren Buffett emphasizes the importance of insurance float as a 'cost-free' source of capital. This float allows Berkshire to make opportunistic investments, particularly during economic downturns, without the need for traditional debt. He highlights how the insurance operations, even in loss years, provide this valuable capital for investment.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <!-- Q&A Screenshot: For best results, use an image around 800x600px. -->
+                        <img src="https://raw.githubusercontent.com/LaxmanByte/buffett-gpt-chatbot/main/important_qualities.png" alt="Screenshot of the answer to the insurance float question" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+
+                <!-- Q&A Card 2 -->
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <!-- Q&A Screenshot: For best results, use an image around 800x600px. -->
+                        <img src="https://raw.githubusercontent.com/LaxmanByte/buffett-gpt-chatbot/main/BUffettGPT_1.png" alt="Screenshot of the answer to the inflation question" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2 order-1 md:order-2">
+                        <h5 class="font-bold text-indigo-600 mb-2">Question:</h5>
+                        <p class="text-gray-700 italic">"What does Warren Buffett say about inflation?"</p>
+                        <h5 class="font-bold text-indigo-600 mt-4 mb-2">Answer:</h5>
+                        <p class="text-gray-700">
+                           Warren Buffett views inflation as a 'pesticide' and 'destructive force.' He notes that while inflation can hurt investors, it also creates opportunities to acquire quality businesses at fair prices. He highlights the severe impact on fixed-income investments but emphasizes that businesses with strong economic moats and pricing power can navigate inflationary periods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Setup -->
+            <div class="bg-gray-50 rounded-2xl shadow-xl p-8">
+                <h4 class="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-6">Technical Setup</h4>
+                <p class="text-gray-600 text-center mb-8">The application can be easily run on any local machine.</p>
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-700 mb-4">Run the application locally with this simple command:</p>
+                    <pre class="bg-gray-800 text-green-400 p-4 rounded-lg shadow-md mb-6"><code>streamlit run main.py</code></pre>
+                    <!-- Command Line Screenshot: For best results, use an image around 800x600px. -->
+                    <img src="https://raw.githubusercontent.com/LaxmanByte/buffett-gpt-chatbot/main/project_runlocally.png" alt="Command line showing the app running locally" class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h3>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Interested in building a custom RAG solution for your business? I'm available for freelance projects.
+                Feel free to reach out to discuss your needs.
+            </p>
+            <a href="mailto:laxman.byte@example.com" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+                Send me an Email
+            </a>
+            <div class="mt-8">
+                <a href="https://github.com/LaxmanByte" target="_blank" class="text-white hover:text-gray-300 transition-colors mx-3">GitHub</a>
+                <a href="https://linkedin.com/in/laxmanbyte" target="_blank" class="text-white hover:text-gray-300 transition-colors mx-3">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto px-4 md:px-6 text-center text-sm">
+            &copy; 2025 Laxman. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
